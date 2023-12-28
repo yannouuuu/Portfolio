@@ -21,8 +21,9 @@ jobs:
           node-version: 14 
           
       - name: Install dependencies
-        run: npm install pug
-        run: npm install pug-cli
+        run: |
+          npm install pug
+          npm install pug-cli
 
       - name: Build Pug files
         run: pug index.pug --pretty
