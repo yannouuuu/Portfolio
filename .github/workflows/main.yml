@@ -22,8 +22,8 @@ jobs:
           
       - name: Install dependencies
         run: |
-          npm install pug
-          npm install pug-cli
+          npm install pug -g
+          npm install pug-cli -g 
 
       - name: Build Pug files
         run: pug index.pug --pretty
