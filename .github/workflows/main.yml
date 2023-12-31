@@ -28,3 +28,4 @@ jobs:
       - name: Build Pug files
         run: |
           pug web/index.pug --pretty
+          mv index.html web/index.html
