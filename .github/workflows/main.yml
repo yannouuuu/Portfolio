@@ -27,4 +27,4 @@ jobs:
 
       - name: Build Pug files
         run: |
-          pug index.pug --pretty
+          pug web/index.pug --pretty
