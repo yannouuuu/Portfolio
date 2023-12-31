@@ -35,3 +35,4 @@ jobs:
           pug web/index.pug
           ls -al ./web
           cp web/index.html ./ 
+          find . -name "index.html"
