@@ -28,10 +28,10 @@ jobs:
       - name: Check contents of directory
         run: |
           ls -al
-          ls -al web/
+          ls -al ./web
         
       - name: Build Pug files
         run: |
           pug web/index.pug
-          ls -al
+          ls -al ./web
           mv index.html web/
