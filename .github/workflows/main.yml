@@ -24,4 +24,5 @@ jobs:
           npm install pug-cli -g 
 
       - name: Build Pug files
-        run: pug index.pug --pretty
+        run: |
+          pug index.pug --pretty
