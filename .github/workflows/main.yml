@@ -34,4 +34,5 @@ jobs:
         run: |
           pug web/index.pug
           ls -al ./web
-          mv index.html web/
+          ls -al
+          mv web/index.html web/
