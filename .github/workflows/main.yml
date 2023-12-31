@@ -25,8 +25,13 @@ jobs:
           npm install pug -g
           npm install pug-cli -g 
 
+      - name: Check contents of directory
+        run: |
+          ls -al
+          ls -al web/
+        
       - name: Build Pug files
         run: |
           pug web/index.pug
-          ls
+          ls -al
           mv index.html web/
