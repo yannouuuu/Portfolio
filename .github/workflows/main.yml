@@ -34,10 +34,7 @@ jobs:
         
       - name: Build Pug files
         run: |
-          pug web/index.pug
-          ls -al ./web
-          cp web/index.html ./ 
-          find . -name "index.html"
+          pug web/index.pug --pretty
         
       - name: Push
         run: |
